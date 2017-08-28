@@ -13,6 +13,6 @@ extension String {
         while current < endIndex && chars[current] != "\r\n" && chars[current] != "\n" && chars[current] != "\r" {
             current = self.index(after: current)
         }
-        return substring(to: current)
+        return "\(self[..<current])"
     }
 }
