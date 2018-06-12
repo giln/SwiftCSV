@@ -9,7 +9,7 @@
 extension String {
     var firstLine: String {
         var current = startIndex
-        let chars = characters
+        let chars = self
         while current < endIndex && chars[current] != "\r\n" && chars[current] != "\n" && chars[current] != "\r" {
             current = self.index(after: current)
         }
